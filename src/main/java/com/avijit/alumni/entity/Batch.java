@@ -1,7 +1,11 @@
 package com.avijit.alumni.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.Entity;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import java.util.List;
 
 /**
  * @author Avijit Barua
@@ -17,6 +21,10 @@ public class Batch extends BaseEntity {
     private String session;
 
     private String description;
+
+    @OneToMany
+    @JsonIgnore
+    private List<User> users;
 
     public Long getBatchNo() {
         return batchNo;
@@ -40,6 +48,14 @@ public class Batch extends BaseEntity {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public List<User> getUsers() {
+        return users;
+    }
+
+    public void setUsers(List<User> users) {
+        this.users = users;
     }
 
     @Override

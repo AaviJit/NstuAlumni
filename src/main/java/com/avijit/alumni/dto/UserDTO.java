@@ -1,11 +1,11 @@
-package com.avijit.alumni.entity.dto;
+package com.avijit.alumni.dto;
 
 import java.util.Date;
 
 /**
- * @author Avijit Barua
- * @created_on ১১/৬/২০ at ১২:০৩ AM
- * @project NstuAlumni
+ * Author: Avijit Barua
+ * Created On 6/11/20 at 11:13 AM
+ * Project: alumni
  */
 public class UserDTO {
 

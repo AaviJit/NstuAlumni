@@ -9,5 +9,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
  * @project NstuAlumni
  */
 public interface BatchRepository extends JpaRepository<Batch, Long> {
+
     Batch findFirstById(Long id);
 }

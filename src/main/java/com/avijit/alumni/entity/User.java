@@ -53,7 +53,7 @@ public class User extends BaseEntity implements UserDetails {
     @OneToMany(mappedBy = "user")
     private List<EducationInfo> educationInfos;
 
-    @OneToOne
+    @ManyToOne
     private Batch batch;
 
 
